@@ -1,6 +1,6 @@
 {
-  "name": "vue-spa-daymanager",
-  "short_name": "vue-spa-daymanager",
+  "name": "vue-spa-history",
+  "short_name": "vue-spa-history",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

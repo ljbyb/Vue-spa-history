@@ -1,4 +1,4 @@
-# vue-spa-daymanager
+# vue-spa-history
 
 ## Project setup
 ```

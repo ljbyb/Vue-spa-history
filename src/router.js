@@ -5,7 +5,7 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   // 利用vue-router自带的滚动行为解决页面切换后scroll滚动距离一直存在，没有回到顶部问题
   scrollBehavior (to, from, savedPosition) {

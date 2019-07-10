@@ -89,7 +89,7 @@ export default {
 
   mounted () {
     let domInput = document.getElementsByName('image').item(0)
-    domInput.getAttributeNode('capture').value = ''
+    domInput.getAttributeNode('capture').value = 'user'
   },
 
   computed: {

@@ -88,10 +88,8 @@ export default {
   },
 
   mounted () {
-    let domCamera = document.getElementsByClassName('wrapper').item(0)
-    domCamera.style.minheight = '100%'
-    // domCamera.style.width = '100%'
-    console.log(document.getElementsByClassName('wrapper').item(0))
+    let domInput = document.getElementsByName('image').item(0)
+    domInput.getAttributeNode('capture').value = ''
   },
 
   computed: {

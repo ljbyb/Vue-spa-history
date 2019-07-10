@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "js/about.28fe3f62.js"
   },
   {
-    "revision": "96d63a27ed505f058d74",
-    "url": "js/app.5a074ff0.js"
+    "revision": "1621bc1e9e87e789a866",
+    "url": "js/app.484df93d.js"
   },
   {
     "revision": "18d565787188fd1004c7",
@@ -48,12 +48,12 @@ self.__precacheManifest = [
     "url": "js/chunk-41e6c774.1d0d19a8.js"
   },
   {
-    "revision": "48e9346c6ce14abb47fd",
-    "url": "css/chunk-4ea95ffa.d4bd1de1.css"
+    "revision": "7be53c7f01baa40144ea",
+    "url": "css/chunk-48b5276c.7868c1cd.css"
   },
   {
-    "revision": "48e9346c6ce14abb47fd",
-    "url": "js/chunk-4ea95ffa.c66f6e51.js"
+    "revision": "7be53c7f01baa40144ea",
+    "url": "js/chunk-48b5276c.833a1343.js"
   },
   {
     "revision": "d888793ef5b35849e448",
@@ -212,7 +212,7 @@ self.__precacheManifest = [
     "url": "img/孙权2.e02c6482.jpeg"
   },
   {
-    "revision": "e87adb1abbe35140fa4d5297144f1b71",
+    "revision": "ac1b8d6f31b93bf5c5b79fcabbcaf542",
     "url": "index.html"
   },
   {

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.5193964d5aade37becb91b0ee0d086a8.js"
+  "precache-manifest.044e8fddb7c3fda7b63b67431012101e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-spa-history"});

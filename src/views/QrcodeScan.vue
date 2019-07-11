@@ -88,11 +88,13 @@ export default {
   },
 
   mounted () {
+    // TODO:需要修改input属性，在移动终端设备上点击时打开图片文件夹而非拍照功能
     let domInput = document.getElementsByName('image').item(0)
-    domInput.getAttributeNode('capture').value = 'user'
+    domInput.removeAttribute('capture')
   },
 
   computed: {
+    // eslint-disable-next-line vue/return-in-computed-property
     paintBlueDots (location, ctx) {
       const {
         topLeftFinderPattern,
@@ -113,6 +115,7 @@ export default {
       })
     },
 
+    // eslint-disable-next-line vue/return-in-computed-property
     paintGreenText (location, ctx) {
       const {
         topLeftCorner,

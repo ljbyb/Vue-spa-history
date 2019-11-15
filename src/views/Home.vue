@@ -1,11 +1,11 @@
 <template>
-  <v-card v-touch="{ left: () => swipe(1), right: () => swipe(-1) }">
+  <v-card>
     <!--顶层菜单区-->
     <v-toolbar
+      absolute
       fixed
       :style="toolbarStyle"
       dark
-      tabs
       flat
     >
       <UserLogin/>
@@ -25,7 +25,7 @@
         <v-tabs
           v-model="active"
           centered
-          color="transparent"
+          background-color="transparent"
           slider-color="white"
           grow
         >
@@ -65,7 +65,7 @@
             gradient="to top, rgba(0,0,0,.33), rgba(0,0,0,.33)"
           >
             <!--图片注释区-->
-            <v-layout pa-2 column fill-height class="lightbox white--text">
+            <v-layout pa-2 ma-2 column fill-height class="lightbox white--text">
               <v-spacer></v-spacer>
               <v-flex shrink>
                 <div class="caption">{{headerItems[active].imgDesc}}</div>
@@ -153,12 +153,12 @@ export default {
         },
         {
           title: '古埃及',
-          imgUrl: require('../assets/img/tabheader/egypt2.jpg'),
+          imgUrl: require('../assets/img/tabheader/egypt2.png'),
           imgDesc: '古埃及是四大文明古国之一，位于非洲东北部尼罗河中下游地区。古埃及文明形成于公元前4000年左右，古埃及前王朝开始于公元前3100年左右时美尼斯统一上下埃及建立第一王朝，终止于公元前30年罗马征服埃及托勒密王朝。（背景：金字塔）'
         },
         {
           title: '古罗马',
-          imgUrl: require('../assets/img/tabheader/roma.jpg'),
+          imgUrl: require('../assets/img/tabheader/roma.png'),
           imgDesc: '古罗马指从公元前9世纪初在意大利半岛中部兴起的文明,先后经历罗马王政时代、罗马共和国、罗马帝国三个阶段。始于公元前754年左右，结束于东罗马帝国（即拜占庭帝国）在1453年被奥斯曼帝国所灭。（背景：罗马斗兽场）'
         },
         {
@@ -178,7 +178,7 @@ export default {
                 desc: ''
               },
               {
-                imgUrl: require('../assets/img/tablist/new-stone1.jpg'),
+                imgUrl: require('../assets/img/tablist/old-stone1.jpg'),
                 title: '新石器时代',
                 subtitle: '1.2万年前～7000年前',
                 desc: ''
@@ -597,6 +597,7 @@ export default {
     // 改变头部的渐变颜色、是否显示“返回顶端”按钮
     handleScroll () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      // console.log('scrollTop=' + scrollTop)
       this.hidden = scrollTop < 60
       if (scrollTop <= 200) {
         this.opacity = scrollTop / 200

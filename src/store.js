@@ -30,6 +30,7 @@ const actions = {
   // 处理主题颜色改变
   setTheme ({ commit }, mode) {
     commit('setTheme', mode)
+    console.log('setTheme mode is :', mode)
   }
 }
 

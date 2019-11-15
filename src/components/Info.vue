@@ -3,19 +3,19 @@
     <v-flex>
         <v-list three-line id="box" >
           <ul id="con1" ref="con1" :class="{anim:animate==true}">
-            <v-list-tile
+            <v-list-item
               v-for="(item, index) in items"
               @click=""
             >
-              <v-list-tile-avatar>
+              <v-list-item-avatar>
                 <img :src="item.avatar">
-              </v-list-tile-avatar>
+              </v-list-item-avatar>
 
-              <v-list-tile-content>
-                <v-list-tile-title v-html="item.title"></v-list-tile-title>
-                <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
+              <v-list-item-content>
+                <v-list-item-title v-html="item.title"></v-list-item-title>
+                <v-list-item-subtitle v-html="item.subtitle"></v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
           </ul>
         </v-list>
     </v-flex>

@@ -3,7 +3,7 @@
 
     <!--顶层菜单-->
     <v-toolbar
-      fixed
+      absolute
       dark
       tabs
       flat

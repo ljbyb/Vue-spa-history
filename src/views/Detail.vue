@@ -3,11 +3,12 @@
 
     <!--顶层菜单-->
     <v-toolbar
+      absolute
       color="transparent"
-      fixed
       dark
-      tabs
       flat
+      fixed
+      tabs
     >
       <v-btn :style="style" icon @click="goToHome">
         <v-icon>arrow_back</v-icon>
@@ -16,7 +17,7 @@
       <v-btn :style="style" icon @click="">
         <v-icon>star_border</v-icon>
       </v-btn>
-      <v-btn :style="style" icon @click="sheet = !sheet">
+      <v-btn :style="style" icon small @click="sheet = !sheet">
         <v-icon>share</v-icon>
       </v-btn>
     </v-toolbar>
@@ -160,7 +161,7 @@ export default {
     ],
     adItems: [
       { img: require('../assets/img/tablist/old-stone1.jpg'), title: '链接', type: 0 },
-      { img: require('../assets/img/tablist/new-stone1.jpg'), title: '视频', type: 1 },
+      { img: require('../assets/img/tablist/old-stone1.jpg'), title: '视频', type: 1 },
       { img: require('../assets/img/tablist/book.jpg'), title: '书籍', type: 2 }
     ],
     dataItems: [
@@ -176,7 +177,7 @@ export default {
                   '\t中国史前时代的各种文化是经过以下几个阶段：以直立猿人为主的旧石器时代早中期（距今约50至40多万年前），接着进入旧石器时代中晚期，以山顶洞人为代表，距今约在20至10余万年前。'
             },
             {
-              imgUrl: require('../assets/img/tablist/new-stone1.jpg'),
+              imgUrl: require('../assets/img/tablist/old-stone1.jpg'),
               title: '新石器时代',
               subtitle: '1.2万年前至7000年前',
               desc: '\t新石器时代早期的代表性文化是裴李岗文化，这一时期属于母系氏族社会，社会尚无明显分层。紧接着是以仰韶文化为代表的新石器时代中期，这一时期，社会性质从母系氏族社会过渡到父系氏族社会，社会贫富分化逐渐加深，同时生产力水平有显著提高。而以龙山文化(4900年至4100年前)为代表的新石器时代晚期，被发现在长江、黄河流域有数个城址群，如中原城址群、江汉城址群、海岱城址群等。这或许表明在龙山时代，社会的组织形态发生较大的转变。\n' +

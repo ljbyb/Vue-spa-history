@@ -7,7 +7,7 @@
 <!--      <v-btn flat icon >-->
 <!--        <v-icon v-on="on">account_circle</v-icon>-->
 <!--      </v-btn>-->
-    <v-avatar v-if="logined">
+    <v-avatar small v-if="logined">
       <v-icon v-on="on">account_circle</v-icon>
     </v-avatar>
 

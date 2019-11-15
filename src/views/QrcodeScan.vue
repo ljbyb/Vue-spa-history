@@ -2,10 +2,10 @@
   <v-card min-height="100%">
     <!--顶层菜单-->
     <v-toolbar
-      :style="style"
+      absolute
       dark
-      fixed
       flat
+      :style="style"
       tabs
     >
       <v-btn icon @click="goToHome">
